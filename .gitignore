@@ -3,3 +3,9 @@
 ################################################################################
 
 /BGYPOC.CRM/BGYPOC.CRM.Plugins/bin/Debug
+/BGYPOC.CRM.Plugins/bin/Debug
+/BGYPOC.CRM.WebSource/bin/Debug
+/BGYPOC.CRM.WebSource/obj/Debug
+/BGYPOC.CRM.WorkflowActivities/bin/Debug
+/BGYPOC.CRM.WorkflowActivities/obj/Debug
+/packages
