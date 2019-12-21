@@ -45,9 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="css\" />
-    <Folder Include="Html\" />
     <Folder Include="Images\Icos\" />
-    <Folder Include="Jscripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Html\BGYSpreadRuleAuditDialog.html" />
+    <Content Include="Jscripts\mcs_bgyspreadrule.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
