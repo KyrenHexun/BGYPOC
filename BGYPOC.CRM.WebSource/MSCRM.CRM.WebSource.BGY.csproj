@@ -7,8 +7,8 @@
     <ProjectGuid>{32BE7CBD-EA03-4152-9A31-2DA0081B9E40}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BGYPOC.CRM.WebSource</RootNamespace>
-    <AssemblyName>BGYPOC.CRM.WebSource</AssemblyName>
+    <RootNamespace>MCSCRM.CRM.WebSource.BGY</RootNamespace>
+    <AssemblyName>MCSCRM.CRM.WebSource.BGY</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

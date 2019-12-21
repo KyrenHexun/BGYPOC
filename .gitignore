@@ -2,10 +2,11 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/BGYPOC.CRM/BGYPOC.CRM.Plugins/bin/Debug
-/BGYPOC.CRM.Plugins/bin/Debug
-/BGYPOC.CRM.WebSource/bin/Debug
-/BGYPOC.CRM.WebSource/obj/Debug
-/BGYPOC.CRM.WorkflowActivities/bin/Debug
-/BGYPOC.CRM.WorkflowActivities/obj/Debug
+/BGYPOC.CRM/BGYPOC.CRM.Plugins/bin
+/BGYPOC.CRM.Plugins/bin
+/BGYPOC.CRM.WebSource/bin
+/BGYPOC.CRM.WebSource/obj
+/BGYPOC.CRM.WorkflowActivities/bin
+/BGYPOC.CRM.WorkflowActivities/obj
 /packages
+/.vs/BGYPOC.CRM/v15

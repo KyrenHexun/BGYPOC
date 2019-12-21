@@ -7,8 +7,8 @@
     <ProjectGuid>{E03DD8B8-5C2B-4E88-9C26-2ABBCDC8B0CC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BGYPOC.CRM.WorkflowActivities</RootNamespace>
-    <AssemblyName>BGYPOC.CRM.WorkflowActivities</AssemblyName>
+    <RootNamespace>MCSCRM.CRM.WorkflowActivities.BGY</RootNamespace>
+    <AssemblyName>MCSCRM.CRM.WorkflowActivities.BGY</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

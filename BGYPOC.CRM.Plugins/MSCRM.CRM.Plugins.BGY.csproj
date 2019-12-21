@@ -7,8 +7,8 @@
     <ProjectGuid>{02700096-3566-4A6C-9E4F-A6127E9800B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BGYPOC.CRM.Plugins</RootNamespace>
-    <AssemblyName>BGYPOC.CRM.Plugins</AssemblyName>
+    <RootNamespace>MSCRM.CRM.Plugins.BGY</RootNamespace>
+    <AssemblyName>MSCRM.CRM.Plugins.BGY</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
