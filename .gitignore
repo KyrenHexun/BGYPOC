@@ -4,6 +4,7 @@
 
 /BGYPOC.CRM.Plugins/bin
 /BGYPOC.CRM.Plugins/obj
+/BGYPOC.CRM.Plugins/obj/Debug
 /BGYPOC.CRM.WebSource/bin
 /BGYPOC.CRM.WebSource/obj
 /BGYPOC.CRM.WorkflowActivities/bin

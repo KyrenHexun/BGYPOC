@@ -17,7 +17,6 @@ D:\Source\BGYPOC\BGYPOC.CRM.Plugins\bin\Debug\microsoft.identitymodel.dll
 D:\Source\BGYPOC\BGYPOC.CRM.Plugins\bin\Debug\Microsoft.Xrm.Sdk.dll
 D:\Source\BGYPOC\BGYPOC.CRM.Plugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
 D:\Source\BGYPOC\BGYPOC.CRM.Plugins\bin\Debug\Microsoft.Xrm.Sdk.xml
-D:\Source\BGYPOC\BGYPOC.CRM.Plugins\obj\Debug\MSCRM.CRM.Plugins.BGY.csprojAssemblyReference.cache
 D:\Source\BGYPOC\BGYPOC.CRM.Plugins\obj\Debug\MSCRM.CRM.Plugins.BGY.csproj.CoreCompileInputs.cache
 D:\Source\BGYPOC\BGYPOC.CRM.Plugins\obj\Debug\MSCRM.CRM.Plugins.BGY.csproj.CopyComplete
 D:\Source\BGYPOC\BGYPOC.CRM.Plugins\obj\Debug\MSCRM.CRM.Plugins.BGY.dll
