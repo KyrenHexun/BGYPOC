@@ -9,3 +9,4 @@ D:\Source\BGYPOC\BGYPOC.CRM.Plugins\obj\Debug\MSCRM.CRM.Plugins.BGY.csproj.CoreC
 D:\Source\BGYPOC\BGYPOC.CRM.Plugins\obj\Debug\MSCRM.CRM.Plugins.BGY.csproj.CopyComplete
 D:\Source\BGYPOC\BGYPOC.CRM.Plugins\obj\Debug\MSCRM.CRM.Plugins.BGY.dll
 D:\Source\BGYPOC\BGYPOC.CRM.Plugins\obj\Debug\MSCRM.CRM.Plugins.BGY.pdb
+D:\Source\BGYPOC\BGYPOC.CRM.Plugins\obj\Debug\MSCRM.CRM.Plugins.BGY.csprojAssemblyReference.cache

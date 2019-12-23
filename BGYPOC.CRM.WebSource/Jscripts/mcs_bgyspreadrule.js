@@ -24,6 +24,8 @@ bgy.spreadrule = {
                     bgy.spreadrule.utils.DisabledAllControl(true);
                 }
             }
+
+            bgy.spreadrule.utils.SetTabVisableByName();
         },
         //窗体-提交
         Submit: function () {
@@ -232,6 +234,17 @@ bgy.spreadrule = {
                     break;
             }
             return text;
+        },
+        SetTabVisableByName() {//如果是金豆豆显示tab,否则隐藏
+            var mcs_rewardtype = Xrm.Page.getAttribute("mcs_rewardtype").getValue();//奖励方式
+            var flag = true;
+            if (mcs_rewardtype === 1) {
+                flag = true;
+            }
+            else {
+                flag = false;
+            }
+            Xrm.Page.ui.tabs.get('tab_2').sections.get('tab_jindoudou').setVisible(flag);
         },
     }
 }
