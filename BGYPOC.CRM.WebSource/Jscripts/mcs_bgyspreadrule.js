@@ -245,6 +245,7 @@ bgy.spreadrule = {
                 flag = false;
             }
             Xrm.Page.ui.tabs.get('tab_2').sections.get('tab_jindoudou').setVisible(flag);
+            Xrm.Page.ui.tabs.get('tab_2').sections.get('tab_2_section_discount').setVisible(!flag);
         },
     }
 }
