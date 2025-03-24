@@ -1,0 +1,91 @@
+name: "Update Secret Pipeline"
+run-name: "Update-Secret-${{ inputs.ASMS }}-${{ inputs.selectEnvironment }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      ASMS:
+        required: true
+        default: '225069'
+        type: string
+      selectEnvironment:
+        description: 'Select Environment for deployment'
+        default: 'dev'
+        required: true
+        type: choice
+        options:
+          - dev
+          - sit
+          - uat
+          - pred
+          - prod
+      environment:
+        description: Azure environment
+        required: true
+        default: 'D365-DevTest-Temp'
+        type: choice
+        options:
+          - 'D365-DevTest-Temp'
+          - 'AZCN-LMCI-225069 #-Prod-APP'
+      runner:
+        description: Runner on
+        required: true
+        default: 'GM-DBT-DEV-Ubuntu-Latest-64'
+        type: choice
+        options:
+          - 'GM-DBT-DEV-Ubuntu-Latest-64'
+          - 'GM-DBT-PROD-Ubuntu-Latest-64'
+
+jobs:
+  update-azure-secret:
+    name: Update-Azure-Secret
+    environment: ${{inputs.environment}}
+    runs-on: ${{inputs.runner}}
+    steps:
+    - name: AzureEnvironment
+      run: |
+        if ${{ inputs.selectEnvironment == 'dev' }};  then
+           nowEnv="d1"
+           nowRg="a${{ inputs.ASMS }}-d1-mcncn3-rg-365dev"
+        fi
+        if ${{ inputs.selectEnvironment == 'sit' }};  then
+           nowEnv="t1"
+           nowRg="a${{ inputs.ASMS }}-t1-mcncn3-rg-365sit"
+        fi
+        if ${{ inputs.selectEnvironment == 'uat' }};  then
+           nowEnv="t2"
+           nowRg="a${{ inputs.ASMS }}-t2-mcncn3-rg-365uat"
+        fi
+        if ${{ inputs.selectEnvironment == 'pred' }};  then
+           nowEnv="t3"
+           nowRg="a${{ inputs.ASMS }}-t3-mcncn3-rg-365prp"
+        fi
+        if ${{ inputs.selectEnvironment == 'prod' }};  then
+           nowEnv="p1"
+           nowRg="a${{ inputs.ASMS }}-p1-mcncn3-rg-365prd"
+        fi
+
+          echo "selectEnv=$nowEnv" >> $GITHUB_ENV
+          echo "selectRg=$nowRg" >> $GITHUB_ENV
+     
+
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up .NET 8 SDK
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x' # 安装 .NET 8 SDK
+
+    - name: Restore Dependencies
+      run: dotnet restore
+
+    - name: Build the Project
+      run: dotnet build --configuration Release
+
+
+
+    - name: Azure Login
+      run: |
+         echo "开始执行deploy"
+
